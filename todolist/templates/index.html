@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+{% if task_list %}
+
+	
+{% for task in task_list %}
+
+
+
+<!--<li><a href="#">{{ task.todo }}</a></li>-->
+<p style = "font-family:georgia,garamond,serif;font-size:18px;font-style:italic;text-align: center;"> {{ task.todo }} 
+	<button onclick="location.href='{% url 'delete' task.id %}'">Delete</button> </p>
+	   
+
+{% endfor %}
+{% else %}
+<p>No tasks are available.</p>
+{% endif %}
+
+{% include "footer.html" %}
+{% endblock %}
+
+
