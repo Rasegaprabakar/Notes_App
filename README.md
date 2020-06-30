@@ -1,4 +1,4 @@
-##### Notes_App
+######### Notes_App
 This is the django app which is used for tracking individual's activites.
 It contains three main modules,
 * Add the task
